@@ -7,6 +7,9 @@ namespace QueComemosApp.v2
 {
     enum TipoReceta
     {
-        DESAYUNO, ENTRADA, PLATO_PRINCIPAL, POSTRE
+        DESAYUNO,
+        ENTRADA, 
+        PLATO_PRINCIPAL, 
+        POSTRE
     }
 }

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -8,12 +10,10 @@ namespace QueComemosApp.v2
     class Ingrediente
     {
 
-        public Ingrediente(string n, int c, TipoIngrediente t)
-        {
-            Nombre = n;
-            Cantidad = c;
-            Tipo = t;
-        }
+
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 
         public string Nombre { get; set; }
 

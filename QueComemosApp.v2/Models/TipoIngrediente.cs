@@ -8,7 +8,13 @@ namespace QueComemosApp.v2
 
     enum TipoIngrediente
     {
-        VERDURA, CARNE, CONDIMENTO, FRUTA, ADEREZO, PROTEINA, PANIFICADOS
+        VERDURA,
+        CARNE,
+        CONDIMENTO,
+        FRUTA,
+        ADEREZO,
+        PROTEINA,
+        PANIFICADOS
     }
 
 }
