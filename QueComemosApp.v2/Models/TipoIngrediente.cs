@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 namespace QueComemosApp.v2
 {
 
-    enum TipoIngrediente
+   public enum TipoIngrediente
     {
         VERDURA,
         CARNE,

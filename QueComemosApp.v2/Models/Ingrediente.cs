@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QueComemosApp.v2
 {
-    class Ingrediente
+    public class Ingrediente
     {
 
 

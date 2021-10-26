@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QueComemosApp.v2
 {
-    class Receta
+    public class Receta
     {
 
         [Key]
@@ -19,7 +19,7 @@ namespace QueComemosApp.v2
         public int TiempoPreparacion { get; set; }
 
 
-        public List<Ingrediente> Ingredientes { get; set; }
+        public virtual ICollection<Ingrediente> Ingredientes { get; set; }
 
 
         [EnumDataType(typeof(TipoReceta))]

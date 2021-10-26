@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QueComemosApp.v2
 {
-    class Usuario
+    public class Usuario
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -16,7 +16,7 @@ namespace QueComemosApp.v2
         public string Nombre { get; set; }
 
 
-        public List<Ingrediente> MisIngredientes { get; set; }
+        public virtual ICollection<Ingrediente> MisIngredientes { get; set; }
 
         
 

@@ -7,7 +7,7 @@ using QueComemosApp.v2.Models;
 
 namespace QueComemosApp.v2.Models
 {
-    class RecetaDBContext : DbContext
+    public class RecetaDBContext : DbContext
     {
         public RecetaDBContext(DbContextOptions<RecetaDBContext> options) : base(options)
         {

@@ -10,8 +10,8 @@ using QueComemosApp.v2.Models;
 namespace QueComemosApp.v2.Migrations
 {
     [DbContext(typeof(RecetaDBContext))]
-    [Migration("20211019022726_QueComemosApp.v2.Models.RecetaDBv3")]
-    partial class QueComemosAppv2ModelsRecetaDBv3
+    [Migration("20211026014706_QueComemosApp.v2.Models.RecetaDBv4")]
+    partial class QueComemosAppv2ModelsRecetaDBv4
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

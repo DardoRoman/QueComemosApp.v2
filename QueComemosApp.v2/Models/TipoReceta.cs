@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace QueComemosApp.v2
 {
-    enum TipoReceta
+   public enum TipoReceta
     {
         DESAYUNO,
         ENTRADA, 
