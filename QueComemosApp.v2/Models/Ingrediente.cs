@@ -15,10 +15,16 @@ namespace QueComemosApp.v2
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Display(Name = "Nombre")]
+        [Required(ErrorMessage = "El campo NOMBRE es obligatorio")]
         public string Nombre { get; set; }
 
+        [Display(Name = "Cantidad")]
+        [Required(ErrorMessage = "El campo CANTIDAD es obligatorio")]
         public int Cantidad { get; set; }
 
+
+        [EnumDataType(typeof(TipoIngrediente))]
         public TipoIngrediente Tipo { get; set; }
 
 

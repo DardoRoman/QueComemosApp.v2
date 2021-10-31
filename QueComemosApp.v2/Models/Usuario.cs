@@ -11,10 +11,12 @@ namespace QueComemosApp.v2
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int NumeroUsuario { get; set; }
+        public int id { get; set; }
 
+
+        [Display(Name = "Ingrese su nombre:")]
+        [Required(ErrorMessage = "El campo NOMBRE es obligatorio")]
         public string Nombre { get; set; }
-
 
         public virtual ICollection<Ingrediente> MisIngredientes { get; set; }
 

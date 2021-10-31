@@ -14,8 +14,12 @@ namespace QueComemosApp.v2
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
 
+        [Display(Name = "Nombre")]
+        [Required(ErrorMessage = "El campo NOMBRE es obligatorio")]
         public string Nombre { get; set; }
 
+        [Display(Name = "Tiempo de preparacion")]
+        [Required(ErrorMessage = "El campo Tiempo de preparacion, es obligatorio")]
         public int TiempoPreparacion { get; set; }
 
 

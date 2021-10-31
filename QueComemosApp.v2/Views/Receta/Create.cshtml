@@ -1,4 +1,4 @@
-﻿@model QueComemosApp.v2.Ingrediente
+﻿@model QueComemosApp.v2.Receta
 
 @{
     ViewData["Title"] = "Create";
@@ -6,7 +6,7 @@
 
 <h1>Create</h1>
 
-<h4>Ingrediente</h4>
+<h4>Receta</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
@@ -18,18 +18,17 @@
                 <span asp-validation-for="Nombre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Cantidad" class="control-label"></label>
-                <input asp-for="Cantidad" class="form-control" />
-                <span asp-validation-for="Cantidad" class="text-danger"></span>
+                <label asp-for="TiempoPreparacion" class="control-label"></label>
+                <input asp-for="TiempoPreparacion" class="form-control" />
+                <span asp-validation-for="TiempoPreparacion" class="text-danger"></span>
             </div>
             <div class="form-group">
                 <label asp-for="Tipo" class="control-label"></label>
-                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoIngrediente>()">
+                <select asp-for="Tipo" class="form-control" asp-items="Html.GetEnumSelectList<TipoReceta>()">
                     <option selected="selected" value="">Tipo</option>
                 </select>
-            </div>
-            
-            <div class="form-group">    
+</div>
+            <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
             </div>
         </form>
